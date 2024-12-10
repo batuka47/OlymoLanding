@@ -8,7 +8,7 @@
     
     "lint": "eslint .",
     "preview": "vite preview",
-    "build": "[my-framework] build --output public"
+    "build": "react build --output public"
   },
   "dependencies": {
     "framer-motion": "^11.13.1",
