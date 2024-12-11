@@ -9,6 +9,7 @@ import Reasoning from './pages/Reasoning'
 import Plan from './pages/Plan'
 import AbtWebsite from './pages/AbtWebsite'
 import Footer from './pages/footer'
+import Preregister from './pages/Preregister'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,6 +20,7 @@ function App() {
     <Reasoning />
     <Plan />
     <AbtWebsite />
+    <Preregister />
     <Footer />
     </main>
   )
