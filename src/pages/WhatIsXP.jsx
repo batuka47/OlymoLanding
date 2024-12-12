@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-
+import logo from '../assets/Olymo.svg'
 const WhatIsXP = () => {
  
   const controls = useAnimation();
@@ -37,11 +37,12 @@ const WhatIsXP = () => {
       variants={sectionVariants}
     >
       <article className="w-[90%] md:w-3/4 lg:w-2/3 flex flex-col gap-16 items-center p-4">
-        <h1 className="font-normal text-3xl md:text-2xl xl:text-4xl text-[#303030]">
-          <span className="font-bold ">Olymo</span> гэж юу вэ  ?
+        <h1 className="font-normal text-2xl md:text-3xl xl:text-4xl text-[#303030] flex items-center gap-2">
+          <span className="font-bold "><img src={logo} alt="" className='w-28 md:w-32 md:mt-4'/></span> гэж юу вэ  ?
         </h1>
         <p className="text-center font-semibold md:text-2xl text-4xl">
-        Боловсролын холбогдолтой бүхий л гадаад дотоодын мэдээ мэдээлэл болон хичээл, уралдаантай уялдахуйц видео контентээр хангагч платформ.
+          
+          Боловсролын холбогдолтой бүхий л гадаад дотоодын мэдээ мэдээлэл болон хичээл, уралдаантай уялдахуйц видео контентээр хангагч платформ.
         </p>
       </article>
     </motion.div>

@@ -1,9 +1,9 @@
 import React from 'react'
 
 import logo from '../assets/OlymoLogo.svg'
-import backdrop from "../assets/Frame 70.svg"
-import backdropBottom from "../assets/Frame 71.svg"
-import phoneBackDrop from "../assets/Frame 30.svg"
+import backdrop from "../assets/WelcomeUp.svg"
+import backdropBottom from "../assets/Welcome.svg"
+import phoneBackDrop from "../assets/WelcomePh.svg"
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useRef, useEffect, useState } from 'react';
@@ -39,17 +39,17 @@ const Home = () => {
     animate={controls}
     variants={sectionVariants}
     className='w-full h-screen bg-[#FAF9F6] relative flex flex-col items-center justify-start pt-32 md:p-0 md:justify-center overflow-visible'>
-      <img src={backdrop} alt="" className='w-full absolute xl:-top-16 md:top-0 md:block hidden'/>
+      <img src={backdrop} alt="" className='w-full absolute xl:-top-52 md:top-0 md:block hidden'/>
       <motion.div
       initial="hidden"
       animate={controls}
       variants={sectionVariants}
       className='w-full p-4 flex flex-col items-center justify-start gap-2 relative '>
-          <h1 className='text-3xl text-[#303030] absolute -top-4'>Welcome to</h1>
-          <img src={logo} alt="xperience logo" className='h-40 w-auto text-[#121212]'/>
+          <h1 className='text-2xl md:text-3xl text-[#303030] absolute -top-4'>Welcome to</h1>
+          <img src={logo} alt="xperience logo" className='h-24 md:h-40 w-auto text-[#121212]'/>
       </motion.div>
       <img src={phoneBackDrop} alt=""  className='w-full absolute md:hidden top-1/3'/>
-      <img src={backdropBottom} alt="" className='rotate-180 w-full absolute  hidden md:block md:-bottom-1/2 z-50'/>
+      <img src={backdropBottom} alt="" className='w-full absolute hidden md:block md:-bottom-1/3 z-50'/>
     </motion.main>
   )
 }
