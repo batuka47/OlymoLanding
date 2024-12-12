@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { db } from '../firebaseConfig.js';  // Import Firestore from your firebase.js file
 import { collection, addDoc } from 'firebase/firestore';  // Firestore functions for adding data
-import backdrop from "../assets/Frame 71.svg";
+import backdrop from "../assets/WelcomePho.svg";
 
 const Preregister = () => {
   const [email, setEmail] = useState('');  // State to hold the email input value

@@ -1,8 +1,8 @@
 import React from 'react'
 
-import logo from '../assets/Frame 31 (1).svg'
+import logo from '../assets/OlymoLogo.svg'
 import backdrop from "../assets/Frame 70.svg"
-import backdropBottom from "../assets/Frame 71.svg"
+import backdropBottom from "../assets/WelcomePho.svg"
 import phoneBackDrop from "../assets/Frame 30.svg"
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
