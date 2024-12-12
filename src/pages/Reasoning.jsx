@@ -20,11 +20,22 @@ const Reasoning = () => {
 
   // Content Array
   const content = [
-    '... more passionate youth',
-    '... the digital hub of internship programs in Mongolia',
-    '... trustworthy reputation as community',
-    '... opportunities for the youth to discover their life purpose early on in life',
-    '... a community that thrives for greatness not just in personal but on a national level',
+    {
+      head:'NEWS.',
+      text:' Боловсрол болон уралдаан тэмцээн, олимпиадын талаарх мэдээ, мэдээлэл',
+    },
+    {
+      head:'MATERIAL.',
+      text:' Олимпиадын жил болгоны материалуудын цугуулга',
+    },
+    {
+      head:'CONTENT.',
+      text:' Хичээл бүрийг тайлбарласан онлайн бичлэгүүд',
+    },
+    {
+      head:'TEST.',
+      text:' Coming soon...',
+    },
   ];
 
   return (
@@ -34,7 +45,7 @@ const Reasoning = () => {
     >
       <header>
         <h1 className="font-normal text-3xl md:text-2xl xl:text-4xl text-[#303030]">
-          we <span className="font-bold">vision</span> to create...
+          Төслийн <span className="font-extrabold bg-gradient-to-r from-[#480CA8] to-[#4361EE] bg-clip-text text-transparent">үндсэн</span> бүтэц...
         </h1>
       </header>
       <div className="w-full h-full flex flex-wrap items-center justify-center text-lg text-[#faf9f6]">
@@ -49,8 +60,8 @@ const Reasoning = () => {
             animate={inView ? 'visible' : 'hidden'}
             variants={boxVariants}
           >
-            <div className="w-full h-full border-2 rounded-3xl border-[#303030] flex flex-col items-center justify-end pt-8 pb-8 bg-[#121212] text-[#faf9f6]">
-              <p className="w-[90%]">{text}</p>
+            <div className="w-full h-full  rounded-3xl  flex flex-col items-center justify-end pt-8 pb-8 bg-indigo-500 text-[#faf9f6]">
+              <p className="w-[90%]"><span className="font-bold">{text.head}</span>{text.text}</p>
             </div>
           </motion.div>
         ))}

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import logo from './assets/OlymoLogo.svg'
 import backdrop from "./assets/Frame 70.svg"
-import backdropBottom from "./assets/WelcomePho.svg"
+import backdropBottom from "./assets/Frame 71.svg"
 // import logo from './assets/Frame 5 (1).svg'
 import Home from './pages/home'
 import WhatIsXP from './pages/WhatIsXP'

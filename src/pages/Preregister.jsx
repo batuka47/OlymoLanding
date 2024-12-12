@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { db } from '../firebaseConfig.js';  // Import Firestore from your firebase.js file
 import { collection, addDoc } from 'firebase/firestore';  // Firestore functions for adding data
-import backdrop from "../assets/WelcomePho.svg";
+import backdrop from "../assets/Frame 71.svg";
 
 const Preregister = () => {
   const [email, setEmail] = useState('');  // State to hold the email input value
@@ -31,7 +31,7 @@ const Preregister = () => {
   return (
     <main className="w-full h-[60dvh] flex flex-col justify-end items-center relative">
       <header className="font-bold text-3xl absolute top-3 w-full text-center py-3">
-        Register early to be demo tester
+        Төслийн талаарх мэдэгдэл авахыг хүсвэл mail-аа үлдээнэ үү.
       </header>
       <div className="flex mb-8 z-40">
         <input
@@ -39,13 +39,13 @@ const Preregister = () => {
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}  // Update email state on input change
-          className="outline-none bg-[#faf9f6] border-[1.5px] h-14 border-[#121212] p-3 px-4 rounded-2xl"
+          className="outline-none bg-[#faf9f6] border-[1.5px] h-14 border-indigo-500 p-3 px-4 rounded-2xl"
         />
         <button
           onClick={handleSend}
-          className="h-14 p-3 px-5 ml-2 rounded-2xl bg-[#121212] text-[#faf9f6] active:scale-125"
+          className="h-14 p-3 px-5 ml-2 rounded-2xl bg-indigo-500 text-[#faf9f6] active:scale-125"
         >
-          Register
+          Илгээх
         </button>
       </div>
       <img src={backdrop} alt="" className="hidden md:block absolute -bottom-1/2 w-full" />

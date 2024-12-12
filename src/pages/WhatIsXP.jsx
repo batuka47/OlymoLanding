@@ -38,7 +38,7 @@ const WhatIsXP = () => {
     >
       <article className="w-[90%] md:w-3/4 lg:w-2/3 flex flex-col gap-16 items-center p-4">
         <h1 className="font-normal text-3xl md:text-2xl xl:text-4xl text-[#303030]">
-          <span className="font-bold">Olymo</span> гэж юу вэ  ?
+          <span className="font-bold ">Olymo</span> гэж юу вэ  ?
         </h1>
         <p className="text-center font-semibold md:text-2xl text-4xl">
         Боловсролын холбогдолтой бүхий л гадаад дотоодын мэдээ мэдээлэл болон хичээл, уралдаантай уялдахуйц видео контентээр хангагч платформ.
