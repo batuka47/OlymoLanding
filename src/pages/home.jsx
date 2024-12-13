@@ -3,7 +3,7 @@ import React from 'react'
 import logo from '../assets/OlymoLogo.svg'
 import backdrop from "../assets/WelcomeUp.svg"
 import backdropBottom from "../assets/Welcome.svg"
-import phoneBackDrop from "../assets/WelcomePh.svg"
+import phoneBackDrop from "../assets/WelcomeP.svg"
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useRef, useEffect, useState } from 'react';
